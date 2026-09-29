@@ -98,7 +98,7 @@ ipython_config.py
 #   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
 #   commonly ignored for libraries.
-# uv.lock
+uv.lock
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
@@ -216,3 +216,40 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# macOS local metadata.
+.DS_Store
+
+# Python bytecode and interpreter caches.
+__pycache__/
+*.py[cod]
+
+# Local virtual environments.
+.venv/
+venv/
+env/
+
+# Test, coverage, and property-test artifacts.
+.coverage
+.coverage.*
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# Static analysis and formatter caches.
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# Mutation-testing generated workspace.
+mutants/
+
+# Build and packaging outputs.
+build/
+dist/
+*.egg-info/
+
+# Local environment files. Commit documented examples instead.
+.env
+.env.*
+!.env.example
