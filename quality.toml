@@ -1,0 +1,40 @@
+# ============================================================================
+# THE ONLY FILE YOU NORMALLY NEED TO EDIT.
+# ============================================================================
+#
+# Quick start:
+#   1. Copy the files you need from this folder into your project.
+#   2. Run: uv sync --dev
+#   3. Scaffold your framework, e.g.:
+#        django-admin startproject config .
+#      (or set up FastAPI/Flask however you normally do)
+#   4. Delete the sample src/ package included here.
+#   5. Update the paths below to match your real project.
+#   6. Run: ./runtests
+# ============================================================================
+
+# Python paths that Ruff and MyPy must check.
+source_paths = ["src"]
+# source_paths = ["app"]                    # Flask / FastAPI flat layout
+# source_paths = ["config", "orders"]       # Django project + one app
+
+# Quality-tool scripts that must also be checked. Do not remove.
+tool_paths = ["runtests", "quality_console.py"]
+
+# Test directories passed to pytest.
+test_paths = ["tests"]
+# test_paths = ["tests", "orders"]          # Django tests inside an app
+
+# Paths measured by coverage. Usually the same as source_paths.
+coverage_paths = ["src"]
+# coverage_paths = ["app"]
+# coverage_paths = ["config", "orders"]
+
+# Minimum required coverage percentage. ./runtests fails below this.
+coverage_threshold = 100
+
+# Optional second strict type checker. Run with: ./runtests --pyright
+enable_basedpyright = true
+
+# Optional mutation testing. Run with: ./runtests --mutations
+enable_mutation_tests = true
